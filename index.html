@@ -9,10 +9,10 @@
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body class="bg-bg">
-        <nav class="w-full h-[5rem] px-32 border-b border-b-border flex items-center justify-between text-text-secondary text-body font-sans"> 
+        <nav class="fixed z-10 w-full h-[5rem] px-32 bg-bg border-b border-b-border flex items-center justify-between text-text-secondary text-body font-sans"> 
             <div> logo </div> 
             
             <ul class="flex list-none gap-lg"> 
@@ -27,7 +27,7 @@
             </button> 
         </nav>
 
-        <main class="flex flex-col pt-lg px-32 gap-section">
+        <main class="flex flex-col pt-[120px] px-32 gap-section">
             <!-- HERO SECTION -->
             <section class="w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <!-- Left side -->
@@ -54,17 +54,17 @@
 
                     <div class="flex gap-[5rem]">
                         <div>
-                            <h2 class="text-h3 text-text font-bold font-sans">1+</h2>
+                            <h3 class="text-h3 text-text font-bold font-sans">1+</h3>
                             <p class="text-small text-text-secondary font-mono">Projects</p>
                         </div>
 
                         <div>
-                            <h2 class="text-h3 text-text font-bold font-sans">6</h2>
+                            <h3 class="text-h3 text-text font-bold font-sans">6</h3>
                             <p class="text-small text-text-secondary font-mono">Languages</p>
                         </div>
 
                         <div>
-                            <h2 class="text-h3 text-text font-bold font-sans">4 yrs</h2>
+                            <h3 class="text-h3 text-text font-bold font-sans">4 yrs</h3>
                             <p class="text-small text-text-secondary font-mono">Coding</p>
                         </div>
                     </div>
@@ -117,6 +117,158 @@
                         <div class="pl-4 py-2">
                             <p class="text-[12px] text-success font-mono">$ status</p><br>
                             <p class="text-[12px] text-text font-mono text-sm">Building something new...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ABOUT SECTION -->
+            <section class="flex justify-between items-start">
+                <!-- Left Side -->
+                <div class="sticky top-section flex flex-col gap-md w-[628px]">
+                    <p class="text-[12px] text-primary font-mono ">ABOUT ME</p>
+
+                    <h2 class="text-h1 text-text font-sans font-bold leading-2xl">Passionate about code,<br>
+                        <span class="text-text-secondary">driven by curiosity.</span></h2>
+
+                    <p class="text-body text-text-secondary font-sans leading-7">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                        irure dolor in reprehenderit </p>
+
+                    <p class="text-body text-text-secondary font-sans leading-7">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex </p>
+                        
+                    <pre class="text-small text-text-secondary font-mono leading-5 border border-border py-sm px-5 rounded-card">
+<div class="text-text-tertiary">~/about.json</div>
+{
+   "name": "Farelldeo L. C.",
+   "role": "Student & Builder",
+   "focus": ["Software", "AI", "Games"],
+   "open_to": "Internships & Projects"
+}
+                    </pre>
+                </div>
+
+                <!-- Right side (timeline) -->
+                <div class="relative w-[520px]">
+                    <div class="absolute -left-[0.5px] top-4 bottom-[80px] w-px bg-border"></div>
+
+                    <div class="pl-8 relative">
+                        <div class="blue-node absolute left-0 top-1 -translate-x-1/2"></div>
+
+                        <div class="flex flex-col gap-1">
+                            <div class="flex gap-4 items-center">
+                                <h3 class="text-small font-mono text-text-secondary">2022</h3>
+                                <h4 class="text-body font-sans text-text">Frontend Foundations</h4>
+                            </div>
+
+                            <p class="text-body font-sans text-text-secondary leading-7">
+                                Started exploring web development through HTML, CSS, and JavaScript, learning how websites are structured.</p>
+                        </div>
+                    </div>
+
+                    <div class="pl-8 relative mt-10">
+                        <div class="blue-node absolute left-0 top-1 -translate-x-1/2"></div>
+
+                        <div class="flex flex-col gap-1">
+                            <div class="flex gap-4 items-center">
+                                <h3 class="text-small font-mono text-text-secondary">2022</h3>
+                                <h4 class="text-body font-sans text-text">Game Development</h4>
+                            </div>
+
+                            <p class="text-body font-sans text-text-secondary leading-7">
+                                Discovered Unity and C#, creating 2D games while learning object-oriented programming and game architecture.</p>
+                        </div>
+                    </div>
+
+                    <div class="pl-8 relative mt-10">
+                        <div class="blue-node absolute left-0 top-1 -translate-x-1/2"></div>
+
+                        <div class="flex flex-col gap-1">
+                            <div class="flex gap-4 items-center">
+                                <h3 class="text-small font-mono text-text-secondary">2023</h3>
+                                <h4 class="text-body font-sans text-text">Competitive Programming</h4>
+                            </div>
+
+                            <p class="text-body font-sans text-text-secondary leading-7">
+                                Switched to C++ to strengthen algorithmic thinking, data structures, and problem-solving through programming contests.                            </p>
+                        </div>
+                    </div>
+
+                    <div class="pl-8 relative mt-10">
+                        <div class="blue-node absolute left-0 top-1 -translate-x-1/2"></div>
+
+                        <div class="flex flex-col gap-1">
+                            <div class="flex gap-4 items-center">
+                                <h3 class="text-small font-mono text-text-secondary">2025</h3>
+                                <h4 class="text-body font-sans text-text">Python & AI Exploration</h4>
+                            </div>
+
+                            <p class="text-body font-sans text-text-secondary leading-7">
+                                Began using Python for automation, algorithm practice, and laid the groundwork for future AI and machine learning projects.</p>
+                        </div>
+                    </div>
+
+                    <div class="pl-8 relative mt-10">
+                        <div class="blue-node absolute left-0 top-1 -translate-x-1/2"></div>
+
+                        <div class="flex flex-col gap-1">
+                            <div class="flex gap-4 items-center">
+                                <h3 class="text-small font-mono text-text-secondary">2025</h3>
+                                <h4 class="text-body font-sans text-text">Backend Development</h4>
+                            </div>
+
+                            <p class="text-body font-sans text-text-secondary leading-7">
+                                Explored Node.js while learning REST APIs and server-side development through real project implementations.</p>
+                        </div>
+                    </div>
+
+                    <div class="pl-8 relative mt-10">
+                        <div class="blue-node absolute left-0 top-1 -translate-x-1/2"></div>
+
+                        <div class="flex flex-col gap-1">
+                            <div class="flex gap-4 items-center">
+                                <h3 class="text-small font-mono text-text-secondary">2026</h3>
+                                <h4 class="text-body font-sans text-text">Java</h4>
+                            </div>
+
+                            <p class="text-body font-sans text-text-secondary leading-7">
+                                Learned Java to broaden understanding of object-oriented programming across different ecosystems and development styles.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="pl-8 relative mt-10">
+                        <div class="blue-node absolute left-0 top-1 -translate-x-1/2"></div>
+
+                        <div class="flex flex-col gap-1">
+                            <div class="flex gap-4 items-center">
+                                <h3 class="text-small font-mono text-text-secondary">2026</h3>
+                                <h4 class="text-body font-sans text-text">PHP & Databases</h4>
+                            </div>
+
+                            <p class="text-body font-sans text-text-secondary leading-7">
+                                Built database-driven web applications using PHP and MySQL, focusing on authentication, CRUD operations, and backend fundamentals. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="pl-8 relative mt-10">
+                        <div class="blue-node absolute left-0 top-1 -translate-x-1/2"></div>
+
+                        <div class="flex flex-col gap-1">
+                            <div class="flex gap-4 items-center">
+                                <h3 class="text-small font-mono text-text-secondary">2026</h3>
+                                <h4 class="text-body font-sans text-text">Modern Frontend</h4>
+                            </div>
+
+                            <p class="text-body font-sans text-text-secondary leading-7">
+                                Adopted Tailwind CSS to build responsive, maintainable interfaces with a utility-first workflow.
+                            </p>
                         </div>
                     </div>
                 </div>
