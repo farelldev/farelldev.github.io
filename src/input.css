@@ -58,4 +58,20 @@
     .nav-btn {
         @apply transition-all duration-300 hover:border-text;
     }
+
+    .red-circle{
+        @apply w-2.5 h-2.5 bg-[#FF605C] rounded-full;
+    }
+
+    .yellow-circle{
+        @apply w-2.5 h-2.5 bg-[#FFBD44] rounded-full;
+    }
+
+    .green-circle{
+        @apply w-2.5 h-2.5 bg-[#00CA4E] rounded-full;
+    }
+
+    .terminal-container{
+        @apply absolute w-60 bg-bg-secondary border border-border rounded-card shadow-lg overflow-hidden;
+    }
 }

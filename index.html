@@ -4,11 +4,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Farelldev Website</title>
+
         <link href="./src/output.css" rel="stylesheet">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body class="bg-bg">
-        
-        <nav class="w-full h-[5rem] border-b border-b-border flex items-center justify-between px-section text-text-secondary text-body font-sans"> 
+        <nav class="w-full h-[5rem] px-32 border-b border-b-border flex items-center justify-between text-text-secondary text-body font-sans"> 
             <div> logo </div> 
             
             <ul class="flex list-none gap-lg"> 
@@ -22,6 +26,101 @@
                 Let's talk
             </button> 
         </nav>
-        
+
+        <main class="flex flex-col pt-lg px-32 gap-section">
+            <!-- HERO SECTION -->
+            <section class="w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Left side -->
+                <div class="flex flex-col gap-lg w-full max-w-157">
+                    <h1 class="text-display text-text font-bold font-sans leading-18">
+                        Building software, <br> one project <br> at a time.
+                    </h1>
+
+                    <p class="text-body-lg text-text-secondary leading-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore 
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                        exercitation ullamco laboris nisi ut
+                    </p>
+
+                    <div class="flex gap-9">
+                        <button class="bg-primary px-9 py-3 rounded-button font-sans text-text">
+                            View Projects
+                        </button>
+
+                        <button class="border border-border px-9 py-3 rounded-button font-sans text-text-secondary">
+                            Download CV
+                        </button>
+                    </div>
+
+                    <div class="flex gap-[5rem]">
+                        <div>
+                            <h2 class="text-h3 text-text font-bold font-sans">1+</h2>
+                            <p class="text-small text-text-secondary font-mono">Projects</p>
+                        </div>
+
+                        <div>
+                            <h2 class="text-h3 text-text font-bold font-sans">6</h2>
+                            <p class="text-small text-text-secondary font-mono">Languages</p>
+                        </div>
+
+                        <div>
+                            <h2 class="text-h3 text-text font-bold font-sans">4 yrs</h2>
+                            <p class="text-small text-text-secondary font-mono">Coding</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right side -->
+                <div class="relative w-full flex justify-end items-center min-h-[510px]">
+                    
+                    <img src="src/img/me.png" alt="My Photo" class="absolute right-[85px] w-auto h-[500px] object-cover">
+
+                    <!-- Terminal 1 -->
+                    <div class="terminal-container top-[130px] left-[115px]"> 
+                        <div class="bg-bg-secondary pl-4 py-3 flex items-center gap-2 border-b border-border">
+                            <div class="red-circle"></div>
+                            <div class="yellow-circle"></div>
+                            <div class="green-circle"></div>
+                        </div>
+                        
+                        <div class="pl-4 py-2">
+                            <p class="text-[12px] text-success font-mono">$ whoami</p><br>
+                            <p class="text-[12px] text-text font-mono">Farelldeo Lionel Chalvary</p>
+                            <p class="text-[12px] text-text font-mono">Software Engineer Student</p>
+                        </div>
+                    </div>
+
+                    <!-- Terminal 2 -->
+                    <div class="terminal-container w-[225] bottom-[130px] right-0">
+                        <div class="bg-bg-secondary pl-4 py-3 flex items-center gap-2 border-b border-border">
+                            <div class="red-circle"></div>
+                            <div class="yellow-circle"></div>
+                            <div class="green-circle"></div>
+                        </div>
+                        
+                        <div class="pl-4 py-2">
+                            <p class="text-[12px] text-success font-mono">$ current_focus</p><br>
+                            <p class="text-[12px] text-text font-mono text-sm">Competitive Programming</p>
+                            <p class="text-[12px] text-text font-mono text-sm">Unity Game Development</p>
+                            <p class="text-[12px] text-text font-mono text-sm">AI Engineering</p>
+                        </div>
+                    </div>
+
+                    <!-- Terminal 3 -->
+                    <div class="terminal-container bottom-0 left-[150px]">
+                        <div class="bg-bg-secondary pl-4 py-3 flex items-center gap-2 border-b border-border">
+                            <div class="red-circle"></div>
+                            <div class="yellow-circle"></div>
+                            <div class="green-circle"></div>
+                        </div>
+                        
+                        <div class="pl-4 py-2">
+                            <p class="text-[12px] text-success font-mono">$ status</p><br>
+                            <p class="text-[12px] text-text font-mono text-sm">Building something new...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </body>
 </html>
