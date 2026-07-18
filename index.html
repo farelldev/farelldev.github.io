@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
     </head>
     <body class="bg-bg">
         <nav class="fixed z-10 w-full h-[5rem] px-32 bg-bg border-b border-b-border flex items-center justify-between text-text-secondary text-body font-sans"> 
-            <div> logo </div> 
+            <div class="px-8 py-3 border-[0.5px] border-[#4F5E73] rounded-button"> logo </div> 
             
             <ul class="flex list-none gap-lg"> 
                 <li><a href="#" class="nav-link">About</a></li> 
@@ -143,7 +143,8 @@
                         exercitation ullamco laboris nisi ut aliquip ex </p>
                         
                     <pre class="text-small text-text-secondary font-mono leading-5 border border-border py-sm px-5 rounded-card">
-<div class="text-text-tertiary">~/about.json</div>
+<span class="text-text-tertiary">~/about.json</span>
+
 {
    "name": "Farelldeo Lionel Chalvary",
    "role": "Student & Builder",
@@ -277,8 +278,8 @@
             <section>
                 <p class="text-[12px] text-primary font-mono">FEATURED PROJECTS</p>
                 <h2 class="text-h1 text-text font-bold font-sans mt-6">Things I've built</h2>
-                <div class="grid grid-cols-3 gap-4 mt-16">
-                    <div class="flex flex-col items-start gap-4 border border-border rounded-card px-7 pb-4">
+                <div class="grid grid-cols-3 gap-6 mt-16">
+                    <div class="flex flex-col items-start gap-4 bg-bg-secondary border border-border rounded-card px-7 pb-4">
                         <img class="h-[220px]">
 
                         <h4 class="text-body-lg text-text font-bold font-sans">
@@ -302,7 +303,7 @@
                         <p class="text-small text-text-secondary font-sans">See on GitHub</p>
                     </div>
 
-                    <div class="flex flex-col items-start gap-4 border border-border rounded-card px-7 pb-4">
+                    <div class="flex flex-col items-start gap-4 bg-bg-secondary border border-border rounded-card px-7 pb-4">
                         <img class="h-[220px]">
 
                         <h4 class="text-body-lg text-text font-bold font-sans">
@@ -326,7 +327,7 @@
                         <p class="text-small text-text-secondary font-sans">See on GitHub</p>
                     </div>
 
-                    <div class="flex flex-col items-start gap-4 border border-border rounded-card px-7 pb-4">
+                    <div class="flex flex-col items-start gap-4 bg-bg-secondary border border-border rounded-card px-7 pb-4">
                         <img class="h-[220px]">
 
                         <h4 class="text-body-lg text-text font-bold font-sans">
@@ -351,6 +352,74 @@
                     </div>
                 </div>
             </section>
+
+            <!-- SKILL SECTION -->
+            <section>
+                <p class="text-[12px] text-primary font-mono">SKILLS</p>
+
+                <h2 class="text-h1 text-text font-bold font-sans mt-6">Tools I work with</h2>
+
+                <div class="grid grid-cols-2 grid-rows-2 mt-16 gap-x-4 gap-y-6">
+                    <div class="border border-border px-6 py-6 rounded-card">
+                        <div class="flex gap-2 items-center">
+                            <div class="blue-pill"></div>
+                            <h4 class="text-body-lg text-text font-bold font-sans">Languages</h4>
+                        </div>
+
+                        <div class="flex flex-wrap mt-6 gap-3">
+                            <div class="badge">Python</div>
+                            <div class="badge">C++</div>
+                            <div class="badge">C#</div>
+                            <div class="badge">Java</div>
+                            <div class="badge">JavaScript</div>
+                            <div class="badge">SQL</div>
+                            <div class="badge">PHP</div>
+                        </div>
+                    </div>
+
+                    <div class="border border-border px-6 py-6 rounded-card">
+                        <div class="flex gap-2 items-center">
+                            <div class="blue-pill"></div>
+                            <h4 class="text-body-lg text-text font-bold font-sans">Frameworks</h4>
+                        </div>
+
+                        <div class="flex flex-wrap mt-6 gap-3">
+                            <div class="badge">Node.js</div>
+                            <div class="badge">Unity</div>
+                            <div class="badge">Tailwind CSS</div>
+                            <div class="badge">Java</div>
+                            <div class="badge">JavaScript</div>
+                        </div>
+                    </div>
+
+                    <div class="border border-border px-6 py-6 rounded-card">
+                        <div class="flex gap-2 items-center">
+                            <div class="blue-pill"></div>
+                            <h4 class="text-body-lg text-text font-bold font-sans">Tools</h4>
+                        </div>
+
+                        <div class="flex flex-wrap mt-6 gap-3">
+                            <div class="badge">Git</div>
+                            <div class="badge">VS Code</div>
+                            <div class="badge">Postman</div>
+                            <div class="badge">Figma</div>
+                        </div>
+                    </div>
+
+                    <div class="border border-border px-6 py-6 rounded-card">
+                        <div class="flex gap-2 items-center">
+                            <div class="blue-pill"></div>
+                            <h4 class="text-body-lg text-text font-bold font-sans">Databases</h4>
+                        </div>
+
+                        <div class="flex flex-wrap mt-6 gap-3">
+                            <div class="badge">MySQK</div>
+                            <div class="badge">Oracle<div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     </body>
 </html>
+
