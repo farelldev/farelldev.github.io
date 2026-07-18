@@ -87,4 +87,12 @@
     .blue-pill{
         @apply bg-primary rounded-pill w-3 h-6
     }
+
+    .section-name{
+        @apply text-[12px] text-primary font-mono;
+    }
+
+    .section-heading{
+        @apply text-h1 text-text font-sans font-bold leading-2xl;
+    }
 }
