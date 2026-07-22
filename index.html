@@ -29,9 +29,9 @@
 
         <main class="flex flex-col pt-[120px] px-32 gap-section">
             <!-- HERO SECTION -->
-            <section class="w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <section class="w-full grid grid-cols-2 gap-12 items-center">
                 <!-- Left side -->
-                <div class="flex flex-col gap-lg w-full max-w-157">
+                <div class="flex flex-col gap-lg w-full">
                     <h1 class="text-display text-text font-bold font-sans leading-18">
                         Building software, <span class="text-text-secondary">one project</span> <br> at a time.
                     </h1>
@@ -54,7 +54,7 @@
 
                     <div class="flex gap-[5rem]">
                         <div>
-                            <h3 class="text-h3 text-text font-bold font-sans">1+</h3>
+                            <h3 class="text-h3 text-text font-bold font-sans">5+</h3>
                             <p class="text-small text-text-secondary font-mono">Projects</p>
                         </div>
 
@@ -76,7 +76,7 @@
                     <img src="src/img/me.png" alt="My Photo" class="absolute right-[85px] w-auto h-[500px] object-cover">
 
                     <!-- Terminal 1 -->
-                    <div class="terminal-container top-[130px] left-[115px]"> 
+                    <div class="terminal-container bottom-[240px] right-[260px]"> 
                         <div class="bg-bg-secondary pl-4 py-3 flex items-center gap-2 border-b border-border">
                             <div class="red-circle"></div>
                             <div class="yellow-circle"></div>
@@ -107,7 +107,7 @@
                     </div>
 
                     <!-- Terminal 3 -->
-                    <div class="terminal-container bottom-0 left-[150px]">
+                    <div class="terminal-container bottom-0 right-[230px]">
                         <div class="bg-bg-secondary pl-4 py-3 flex items-center gap-2 border-b border-border">
                             <div class="red-circle"></div>
                             <div class="yellow-circle"></div>
@@ -123,9 +123,9 @@
             </section>
 
             <!-- ABOUT SECTION -->
-            <section class="flex justify-between items-start">
+            <section class="grid grid-cols-[1.2fr_1fr] gap-25 items-start">
                 <!-- Left Side -->
-                <div class="sticky top-section flex flex-col gap-md w-[628px]">
+                <div class="sticky top-section flex flex-col gap-md">
                     <p class="section-name">ABOUT ME</p>
 
                     <h2 class="section-heading">Passionate about code,<br>
@@ -142,7 +142,8 @@
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation ullamco laboris nisi ut aliquip ex </p>
                         
-                    <pre class="text-small text-text-secondary font-mono leading-5 border border-border py-sm px-5 rounded-card">
+                    <pre class="text-small text-text-secondary font-mono leading-5 border border-border py-sm px-5 
+                        rounded-card overflow-x-auto">
 <span class="text-text-tertiary">~/about.json</span>
 
 {
@@ -154,8 +155,8 @@
                 </div>
 
                 <!-- Right side (timeline) -->
-                <div class="relative w-[520px]">
-                    <div class="absolute -left-[0.5px] top-4 bottom-[80px] w-px bg-border"></div>
+                <div class="relative">
+                    <div class="absolute left-[-0.5px] top-4 bottom-[80px] w-px bg-border"></div>
 
                     <div class="pl-8 relative">
                         <div class="blue-node absolute left-0 top-1 -translate-x-1/2"></div>
@@ -274,81 +275,103 @@
                 </div>
             </section>
 
-            <!-- Projects Section -->
+            <!-- PROJECTS SECTION -->
             <section>
                 <p class="section-name">FEATURED PROJECTS</p>
                 <h2 class="section-heading mt-6">Things I've built</h2>
-                <div class="grid grid-cols-3 gap-6 mt-16">
-                    <div class="flex flex-col items-start gap-4 bg-bg-secondary border border-border rounded-card px-7 pb-4">
-                        <img class="h-[220px]">
+                <div class="grid auto-rows-fr grid-cols-3 gap-6 mt-16">
+                    <!-- Card 1 -->
+                    <div class="flex h-full flex-col overflow-hidden gap-6 bg-bg-secondary border border-border rounded-card pb-4">
+                        <img
+                            src="src/img/quakesurvive.png"
+                            class="w-full h-55 object-cover"
+                        >
 
-                        <h4 class="text-body-lg text-text font-bold font-sans">
-                            Nama Proyek
-                        </h4>
-
-                        <p class="text-body text-text-secondary font-sans leading-7">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                            ad minim veniam, quis nostrud
-                        </p>
-
-                        <div class="flex flex-wrap gap-3">
-                            <div class="badge">Badge</div>
-                            <div class="badge">Badge</div>
-                            <div class="badge">Badge</div>
-                            <div class="badge">Badge</div>
-                            <div class="badge">Badge</div>
+                        <div class="flex flex-1 flex-col gap-4 px-7">
+                            <h4 class="text-body-lg text-text font-bold font-sans">
+                                QuakeSurvive
+                            </h4>
+    
+                            <p class="text-body text-text-secondary font-sans leading-7">
+                                Educational 2D survival game that teaches earthquake preparedness through interactive gameplay.
+                                Players learn how to react before, during, and after an earthquake in a simulated disaster environment.
+                            </p>
+    
+                            <div class="flex flex-wrap gap-3">
+                                <div class="badge">C#</div>
+                                <div class="badge">Unity</div>
+                                <div class="badge">2D</div>
+                                <div class="badge">Game Development</div>
+                                <div class="badge">UI</div>
+                            </div>
+    
+                            <div class="flex gap-2 mt-auto text-small text-text-tertiary font-sans">
+                                <p>Status: In Development</a>
+                            </div>
                         </div>
-
-                        <p class="text-small text-text-secondary font-sans">See on GitHub</p>
                     </div>
 
-                    <div class="flex flex-col items-start gap-4 bg-bg-secondary border border-border rounded-card px-7 pb-4">
-                        <img class="h-[220px]">
+                    <div class="flex h-full flex-col overflow-hidden gap-6 bg-bg-secondary border border-border rounded-card pb-4">
+                        <img
+                            src="src/img/lapangin.png"
+                            class="w-full h-55 object-cover"
+                        >
 
-                        <h4 class="text-body-lg text-text font-bold font-sans">
-                            Nama Proyek
-                        </h4>
-
-                        <p class="text-body text-text-secondary font-sans leading-7">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                            ad minim veniam, quis nostrud
-                        </p>
-
-                        <div class="flex flex-wrap gap-3">
-                            <div class="badge">Badge</div>
-                            <div class="badge">Badge</div>
-                            <div class="badge">Badge</div>
-                            <div class="badge">Badge</div>
-                            <div class="badge">Badge</div>
+                        <div class="flex flex-1 flex-col gap-4 px-7">
+                            <h4 class="text-body-lg text-text font-bold font-sans">
+                                LapangIn
+                            </h4>
+    
+                            <p class="text-body text-text-secondary font-sans leading-7">
+                                A sports field reservation platform that simplifies court booking with authentication,
+                                scheduling, and database-driven management for badminton and futsal venues.
+                            </p>
+    
+                            <div class="flex flex-wrap gap-3">
+                                <div class="badge">PHP</div>
+                                <div class="badge">MySQL</div>
+                                <div class="badge">JavaScript</div>
+                            </div>
+    
+                            <div class="flex gap-4 mt-auto text-small text-text-secondary font-sans">
+                                <a href="https://github.com/farelldev/lapangin-web" class="hover:text-text">View Source →</a>
+                                <span class="text-text-tertiary">|</span>
+                                <a href="https://lio-lapangin.trpl25.com/" class="hover:text-text">Live Demo →</a>
+                            </div>
                         </div>
-
-                        <p class="text-small text-text-secondary font-sans">See on GitHub</p>
                     </div>
 
-                    <div class="flex flex-col items-start gap-4 bg-bg-secondary border border-border rounded-card px-7 pb-4">
-                        <img class="h-[220px]">
+                    <div class="flex h-full flex-col overflow-hidden gap-6 bg-bg-secondary border border-border rounded-card pb-4">
+                        <img
+                            src="src/img/knights_run.png"
+                            class="w-full h-55 object-cover"
+                        >
 
-                        <h4 class="text-body-lg text-text font-bold font-sans">
-                            Nama Proyek
-                        </h4>
+                        <div class="flex flex-1 flex-col gap-4 px-7">
+                            <h4 class="text-body-lg text-text font-bold font-sans">
+                                Knight's Adventure
+                            </h4>
 
-                        <p class="text-body text-text-secondary font-sans leading-7">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                            ad minim veniam, quis nostrud
-                        </p>
+                            <p class="text-body text-text-secondary font-sans leading-7">
+                                A 2D action platformer and my first complete game built with Unity. Although it
+                                reflects my early experience as a developer, it marks the beginning of my journey 
+                                into game development and software engineering.
+                            </p>
 
-                        <div class="flex flex-wrap gap-3">
-                            <div class="badge">Badge</div>
-                            <div class="badge">Badge</div>
-                            <div class="badge">Badge</div>
-                            <div class="badge">Badge</div>
-                            <div class="badge">Badge</div>
+                            <div class="flex flex-wrap gap-3">
+                                <div class="badge">C#</div>
+                                <div class="badge">Unity</div>
+                                <div class="badge">2D</div>
+                                <div class="badge">Archive</div>
+                                <div class="badge">2022</div>
+                            </div>
+
+                            <div class="flex gap-4 mt-auto text-small text-text-secondary font-sans">
+                                <a href="https://github.com/farelldev/Knight-s-Adventure" class="hover:text-text">View Source →</a>
+                                <span class="text-text-tertiary">|</span>
+                                <a href="https://lio-lapangin.trpl25.com/" class="hover:text-text">Watch Gameplay →</a>
+                            </div>
                         </div>
-
-                        <p class="text-small text-text-secondary font-sans">See on GitHub</p>
                     </div>
                 </div>
             </section>
@@ -387,8 +410,6 @@
                             <div class="badge">Node.js</div>
                             <div class="badge">Unity</div>
                             <div class="badge">Tailwind CSS</div>
-                            <div class="badge">Java</div>
-                            <div class="badge">JavaScript</div>
                         </div>
                     </div>
 
@@ -445,6 +466,16 @@
                 </div>
             </section>
         </main>
+
+        <footer class="grid grid-cols-3 mt-section border border-t-border h-24">
+            <div></div>
+
+            <p class="flex justify-center items-center text-small text-text-secondary font-sans">
+                Built with HTML · Tailwind CSS · JavaScript · Figma
+            </p>
+
+            <div></div>
+        </footer>
     </body>
 </html>
 
