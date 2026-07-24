@@ -270,9 +270,6 @@
   .grid {
     display: grid;
   }
-  .table {
-    display: table;
-  }
   .h-24 {
     height: calc(var(--spacing) * 24);
   }
@@ -281,9 +278,6 @@
   }
   .h-\[5rem\] {
     height: 5rem;
-  }
-  .h-\[220px\] {
-    height: 220px;
   }
   .h-\[500px\] {
     height: 500px;
@@ -312,19 +306,9 @@
   .flex-1 {
     flex: 1;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .-translate-x-1 {
-    --tw-translate-x: calc(var(--spacing) * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
   .-translate-x-1\/2 {
     --tw-translate-x: calc(calc(1 / 2 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .resize {
-    resize: both;
   }
   .list-none {
     list-style-type: none;
@@ -343,9 +327,6 @@
   }
   .grid-rows-2 {
     grid-template-rows: repeat(2, minmax(0, 1fr));
-  }
-  .grid-rows-\[220px_auto\] {
-    grid-template-rows: 220px auto;
   }
   .flex-col {
     flex-direction: column;
@@ -422,18 +403,11 @@
   .overflow-x-auto {
     overflow-x: auto;
   }
-  .rounded-2xl {
-    border-radius: var(--radius-2xl);
-  }
   .rounded-button {
     border-radius: var(--radius-button);
   }
   .rounded-card {
     border-radius: var(--radius-card);
-  }
-  .rounded-t-card {
-    border-top-left-radius: var(--radius-card);
-    border-top-right-radius: var(--radius-card);
   }
   .border {
     border-style: var(--tw-border-style);
@@ -470,9 +444,6 @@
   }
   .bg-primary {
     background-color: var(--color-primary);
-  }
-  .bg-red-500 {
-    background-color: var(--color-red-500);
   }
   .object-cover {
     object-fit: cover;
@@ -585,13 +556,6 @@
   }
   .text-text-tertiary {
     color: var(--color-text-tertiary);
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   @media (hover: hover) {
     .hover\:text-text:hover {
@@ -748,11 +712,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -831,7 +790,6 @@
       --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
       --tw-duration: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
