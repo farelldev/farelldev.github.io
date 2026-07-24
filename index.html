@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,23 +13,23 @@
     </head>
     <body class="bg-bg">
         <nav class="fixed z-10 w-full h-[5rem] px-32 bg-bg border-b border-b-border flex items-center justify-between text-text-secondary text-body font-sans"> 
-            <div class="px-8 py-3 border-[0.5px] border-[#4F5E73] rounded-button"> logo </div> 
+            <a href="#hero" class="px-8 py-3 border-[0.5px] border-[#4F5E73] rounded-button"> logo </a> 
             
             <ul class="flex list-none gap-lg"> 
-                <li><a href="#" class="nav-link">About</a></li> 
-                <li><a href="#" class="nav-link">Journey</a></li> 
-                <li><a href="#" class="nav-link">Projects</a></li> 
-                <li><a href="#" class="nav-link">Skills</a></li> 
+                <li><a href="#hero" class="nav-link">Home</a></li> 
+                <li><a href="#about" class="nav-link">About</a></li> 
+                <li><a href="#projects" class="nav-link">Projects</a></li> 
+                <li><a href="#skills" class="nav-link">Skills</a></li> 
             </ul> 
             
-            <button class="px-8 py-3 border-[0.5px] border-[#4F5E73] rounded-button nav-btn"> 
+            <a href="#contact" class="px-8 py-3 border-[0.5px] border-[#4F5E73] rounded-button nav-btn"> 
                 Let's talk
-            </button> 
+            </a> 
         </nav>
 
         <main class="flex flex-col pt-[120px] px-32 gap-section">
             <!-- HERO SECTION -->
-            <section class="w-full grid grid-cols-2 gap-12 items-center">
+            <section id="hero" class="w-full grid grid-cols-2 gap-12 items-center scroll-mt-section">
                 <!-- Left side -->
                 <div class="flex flex-col gap-lg w-full">
                     <h1 class="text-display text-text font-bold font-sans leading-18">
@@ -45,18 +45,21 @@
                     </p>
 
                     <div class="flex gap-9">
-                        <button class="bg-primary px-9 py-3 rounded-button font-sans text-text">
+                        <a href="#projects" class="bg-primary px-9 py-3 rounded-button font-sans text-text">
                             View Projects
-                        </button>
+                        </a>
 
-                        <button class="border border-border px-9 py-3 rounded-button font-sans text-text-secondary">
-                            Download CV
-                        </button>
+                        <a 
+                        href="src/doc/Farelldeo_Lionel_Chalvary_Resume.pdf"
+                        download
+                        class="border border-border px-9 py-3 rounded-button font-sans text-text-secondary">
+                            Download Resume
+                        </a>
                     </div>
 
                     <div class="flex gap-[5rem]">
                         <div>
-                            <h3 class="text-h3 text-text font-bold font-sans">5+</h3>
+                            <h3 class="text-h3 text-text font-bold font-sans">4+</h3>
                             <p class="text-small text-text-secondary font-mono">Projects</p>
                         </div>
 
@@ -125,7 +128,7 @@
             </section>
 
             <!-- ABOUT SECTION -->
-            <section class="grid grid-cols-[1.2fr_1fr] gap-25 items-start">
+            <section id="about" class="grid grid-cols-[1.2fr_1fr] gap-25 items-start scroll-mt-section">
                 <!-- Left Side -->
                 <div class="sticky top-section flex flex-col gap-md">
                     <p class="section-name">ABOUT ME</p>
@@ -280,7 +283,7 @@
             </section>
 
             <!-- PROJECTS SECTION -->
-            <section>
+            <section id="projects" class="scroll-mt-section">
                 <p class="section-name">FEATURED PROJECTS</p>
                 <h2 class="section-heading mt-6">Things I've built</h2>
                 <div class="grid auto-rows-fr grid-cols-3 gap-6 mt-16">
@@ -310,7 +313,7 @@
                             </div>
     
                             <div class="flex gap-2 mt-auto text-small text-text-tertiary font-sans">
-                                <p>Status: In Development</a>
+                                <a class="pointer-events-none cursor-not-allowed">Status: In Development</a>
                             </div>
                         </div>
                     </div>
@@ -338,9 +341,17 @@
                             </div>
     
                             <div class="flex gap-4 mt-auto text-small text-text-secondary font-sans">
-                                <a href="https://github.com/farelldev/lapangin-web" class="hover:text-text">View Source →</a>
+                                <a href="https://github.com/farelldev/lapangin-web"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="hover:text-text">View Source →</a>
+
                                 <span class="text-text-tertiary">|</span>
-                                <a href="https://lio-lapangin.trpl25.com/" class="hover:text-text">Live Demo →</a>
+                                
+                                <a href="https://lio-lapangin.trpl25.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="hover:text-text">Live Demo →</a>
                             </div>
                         </div>
                     </div>
@@ -371,17 +382,25 @@
                             </div>
 
                             <div class="flex gap-4 mt-auto text-small text-text-secondary font-sans">
-                                <a href="https://github.com/farelldev/Knight-s-Adventure" class="hover:text-text">View Source →</a>
+                                <a href="https://github.com/farelldev/Knight-s-Adventure" 
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="hover:text-text">View Source →</a>
+
                                 <span class="text-text-tertiary">|</span>
-                                <a href="https://lio-lapangin.trpl25.com/" class="hover:text-text">Watch Gameplay →</a>
+
+                                <a href="#" 
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="pointer-events-none cursor-not-allowed text-text-tertiary">Gameplay (Coming Soon)</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- SKILL SECTION -->
-            <section>
+            <!-- SKILLS SECTION -->
+            <section id="skills" class="scroll-mt-section">
                 <p class="section-name">SKILLS</p>
 
                 <h2 class="section-heading mt-6">Tools I work with</h2>
@@ -446,39 +465,43 @@
             </section>
 
             <!-- CONTACT SECTION -->
-            <section class="flex flex-col items-center gap-6 max-w-[600px] mx-auto">
+            <section id="contact" class="flex flex-col items-center gap-6 max-w-[600px] mx-auto scroll-mt-section">
                 <p class="section-name">GET IN TOUCH</p>
                 <h2 class="section-heading">Let's work together</h2>
 
                 <p class="text-body text-text-secondary font-sans leading-7 text-center flex-wrap">I'm open to internship opportunities, collaborations, and 
-                    interesting projects. Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    interesting projects. Always happy to connect with people who enjoy building meaningful software.</p>
 
                 <div class="flex flex-wrap gap-x-6 gap-y-4 justify-center mt-2">
-                    <button href="#" class="flex gap-2 px-7 py-3 border border-border rounded-button">
+                    <a href="https://github.com/farelldev/" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex gap-2 px-7 py-3 border border-border rounded-button">
                         <p class="text-small text-text-secondary font-mono">GH</p>
                         <p class="text-small text-text-secondary font-sans font-semibold">GitHub</p>
-                    </button>
+                    </a>
                     
-                    <button href="#" class="flex gap-2 px-7 py-3 border border-border rounded-button">
+                    <a href="https://www.linkedin.com/in/farelldeo-lionel-chalvary-a10aa4381/" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex gap-2 px-7 py-3 border border-border rounded-button">
                         <p class="text-small text-text-secondary font-mono">LI</p>
                         <p class="text-small text-text-secondary font-sans font-semibold">LinkedIn</p>
-                    </button>
+                    </a>
 
-                    <button href="#" class="flex gap-2 px-7 py-3 border bg-primary rounded-button">
-                        <p class="text-small text-text font-sans font-semibold">farelldeolionelchalvary@gmail.com</p>
-                    </button>
+                    <a href="mailto:farelldeolionelchalvary@gmail.com" class="flex gap-2 px-7 py-3 bg-primary rounded-button
+                    text-small text-text font-sans font-semibold">
+                        farelldeolionelchalvary@gmail.com
+                    </a>
                 </div>
             </section>
         </main>
 
-        <footer class="grid grid-cols-3 mt-section border border-t-border h-24">
-            <div></div>
-
-            <p class="flex justify-center items-center text-small text-text-secondary font-sans">
-                Built with HTML · Tailwind CSS · JavaScript · Figma
-            </p>
-
-            <div></div>
+        <footer class="flex items-center justify-center mt-section border border-t-border h-24">
+            <div class="flex flex-col justify-center gap-1 text-small text-center font-sans">
+                <p class="text-text-secondary">Built with HTML · Tailwind CSS · Figma</p>
+                <p class="text-text-tertiary">Designed and developed by Farelldeo Lionel Chalvary.</p>
+            </div>
         </footer>
     </body>
 </html>
