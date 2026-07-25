@@ -52,12 +52,12 @@
 }
 
 @layer components {
-    .nav-link, .nav-btn {
-        @apply transition-all duration-300 hover:text-text;
+    .nav-link {
+        @apply transition-all duration-300 hover:text-text active:text-text;
     }
     
     .nav-btn {
-        @apply transition-all duration-300 hover:border-text;
+        @apply transition-all duration-300 hover:text-text active:text-text hover:border-text active:border-text;
     }
 
     .red-circle{
