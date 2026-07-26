@@ -1,4 +1,4 @@
-![Version](https://img.shields.io/badge/version-v1.0.0-blue) ![Status](https://img.shields.io/badge/status-active-success) ![License](https://img.shields.io/badge/license-MIT-green)
+![Version](https://img.shields.io/badge/version-v1.1.0-blue) ![Status](https://img.shields.io/badge/status-active-success) ![License](https://img.shields.io/badge/license-MIT-green)
 # Personal Portfolio
 
 My personal portfolio website built to showcase projects, technical skills, and my journey as a Software Engineering student at Universitas Gadjah Mada.
@@ -23,7 +23,7 @@ https://farelldev.github.io
 
 ## 📌 Roadmap
 
-- [ ] Mobile responsive layout
+- [X] Mobile responsive layout
 - [ ] Smooth animations
 - [ ] Light mode
 - [ ] Better accessibility
