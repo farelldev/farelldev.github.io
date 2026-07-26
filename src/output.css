@@ -320,6 +320,9 @@
   .h-55 {
     height: calc(var(--spacing) * 55);
   }
+  .h-\[5rem\] {
+    height: 5rem;
+  }
   .h-\[500px\] {
     height: 500px;
   }
@@ -491,6 +494,10 @@
   .border-\[0\.5px\] {
     border-style: var(--tw-border-style);
     border-width: 0.5px;
+  }
+  .border-t {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
   }
   .border-b {
     border-bottom-style: var(--tw-border-style);
