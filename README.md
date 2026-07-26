@@ -23,7 +23,7 @@ https://farelldev.github.io
 
 ## 📌 Roadmap
 
-- [ ] Mobile responsive layout
+- [X] Mobile responsive layout
 - [ ] Smooth animations
 - [ ] Light mode
 - [ ] Better accessibility
