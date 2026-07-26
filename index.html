@@ -31,7 +31,7 @@
         </nav>
 
         <div id="mobile-menu" class="hidden fixed top-24 z-9 w-full flex-col justify-center items-center gap-2 py-4 bg-bg text-text-secondary border-b border-b-border">
-            <a href="#hero" class="nav-lin">Home</a>
+            <a href="#hero" class="nav-link">Home</a>
             <a href="#about" class="nav-link">About</a>
             <a href="#projects" class="nav-link">Projects</a>
             <a href="#skills" class="nav-link">Skills</a>
@@ -55,7 +55,7 @@
                         curiosity.
                     </h1>
 
-                    <p class="text-body-lg text-text-secondary text-center lg:text-left leading-8 md:px-5">
+                    <p class="text-body-lg text-text-secondary text-center lg:text-left leading-8 md:px-5 lg:px-0">
                         I am a Software Engineer student who enjoys solving problems and building software 
                         through continuous learning, from web applications and educational games to 
                         future AI projects.
@@ -145,9 +145,9 @@
             </section>
 
             <!-- ABOUT SECTION -->
-            <section id="about" class="grid grid-cols-[1.2fr_1fr] gap-25 items-start scroll-mt-section">
+            <section id="about" class="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] lg:gap-25 items-start scroll-mt-section">
                 <!-- Left Side -->
-                <div class="sticky top-section flex flex-col gap-md">
+                <div class="lg:sticky top-section flex flex-col gap-md">
                     <p class="section-name">ABOUT ME</p>
 
                     <h2 class="section-heading">
@@ -166,7 +166,7 @@
                         something people can interact with, while continuously improving through curiosity, 
                         experimentation, and hands-on experience.</p>
                         
-                    <pre class="text-small text-text-secondary font-mono leading-5 border border-border py-sm px-5 
+                    <pre class="text-small text-text-secondary font-mono leading-5 border border-border py-sm px-sm 
                         rounded-card overflow-x-auto">
 <span class="text-text-tertiary">~/about.json</span>
 
@@ -178,9 +178,15 @@
 }</pre>
                 </div>
 
+                <!-- <p id="journey" class="md:hidden section-name mt-section mb-5 scroll-mt-section">MY JOURNEY</p> -->
+
+                <h2 class="lg:hidden text-h2 text-text font-bold font-sans mt-3xl mb-lg">
+                    My learning journey</h2>
+
                 <!-- Right side (timeline) -->
                 <div class="relative">
-                    <div class="absolute left-[-0.5px] top-4 bottom-[80px] w-px bg-border"></div>
+
+                    <div class="absolute left-[-0.5px] top-4 bottom-[100px] md:bottom-[80px] w-px bg-border"></div>
 
                     <div class="pl-8 relative">
                         <div class="blue-node absolute left-0 top-1 -translate-x-1/2"></div>
