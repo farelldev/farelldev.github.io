@@ -25,7 +25,7 @@
                 <li><a href="#skills" class="nav-link">Skills</a></li> 
             </ul> 
             
-            <a href="#contact" class="hidden md:block px-8 py-3 border-[0.5px] border-[#4F5E73] rounded-button nav-btn"> 
+            <a href="#contact" class="hidden md:block px-8 py-3 border border-[#4F5E73] rounded-button nav-btn"> 
                 Let's talk
             </a> 
         </nav>
@@ -46,35 +46,35 @@
 
                 <!-- Left side -->
                 <div class="flex flex-col gap-lg w-full items-center lg:items-start">
-                    <img src="src/img/me-ellipse.png" alt="My Photo" class="block md:hidden w-[85px] -mb-4 h-auto rounded-full">
-                    <img src="src/img/me-square.png" alt="My Photo" class="hidden md:block lg:hidden w-[250px] h-auto rounded-card">
+                    <img src="src/img/me-ellipse.png" alt="My Photo" class="block md:hidden w-[85px] -mb-4 h-auto rounded-full fade-up delay-1">
+                    <img src="src/img/me-square.png" alt="My Photo" class="hidden md:block lg:hidden w-[250px] h-auto rounded-card fade-up delay-1">
 
-                    <h1 class="text-5xl md:text-display text-text font-bold font-sans text-center lg:text-left leading-15 md:leading-18">
+                    <h1 class="text-5xl md:text-display text-text font-bold font-sans text-center lg:text-left leading-15 md:leading-18 fade-up delay-2">
                         Building software,<br>
                         <span class="text-text-secondary">powered by</span><br>
                         curiosity.
                     </h1>
 
-                    <p class="text-body-lg text-text-secondary text-center lg:text-left leading-8 md:px-5 lg:px-0">
+                    <p class="text-body-lg text-text-secondary text-center lg:text-left leading-8 md:px-5 lg:px-0 fade-up delay-3">
                         I am a Software Engineer student who enjoys solving problems and building software 
                         through continuous learning, from web applications and educational games to 
                         future AI projects.
                     </p>
 
                     <div class="flex flex-col md:flex-row items-center md:justify-center lg:justify-start gap-5 md:gap-9">
-                        <a href="#projects" class="bg-primary px-9 py-3 rounded-button font-sans text-text">
+                        <a href="#projects" class="bg-primary px-9 py-3 rounded-button font-sans text-text fade-up delay-4">
                             View Projects
                         </a>
 
                         <a 
                         href="src/doc/Farelldeo_Lionel_Chalvary_Resume.pdf"
                         download
-                        class="border border-border px-9 py-3 rounded-button font-sans text-text-secondary">
+                        class="border border-border px-9 py-3 rounded-button font-sans text-text-secondary fade-up delay-5">
                             Download Resume
                         </a>
                     </div>
 
-                    <div class="flex justify-around lg:justify-start gap-[3rem] md:gap-[5rem]">
+                    <div class="flex justify-around lg:justify-start gap-[3rem] md:gap-[5rem] fade-up delay-6">
                         <div>
                             <h3 class="text-h3 text-text font-bold font-sans">4+</h3>
                             <p class="text-small text-text-secondary font-mono">Projects</p>
@@ -93,8 +93,7 @@
                 </div>
 
                 <!-- Right side -->
-                <div class="hidden lg:flex relative w-full justify-end items-center min-h-[510px]">
-                    
+                <div class="hidden lg:flex relative w-full justify-end items-center min-h-[510px] fade-up delay-3">                    
                     <img src="src/img/me.png" alt="My Photo" class="lg:block absolute lg:right-[85px] w-auto h-[500px] object-cover">
 
                     <!-- Terminal 1 -->
@@ -145,7 +144,7 @@
             </section>
 
             <!-- ABOUT SECTION -->
-            <section id="about" class="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] lg:gap-25 items-start scroll-mt-section">
+            <section id="about" class="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] lg:gap-25 items-start scroll-mt-section hidden-section">
                 <!-- Left Side -->
                 <div class="lg:sticky top-section flex flex-col gap-md">
                     <p class="section-name">ABOUT ME</p>
@@ -306,15 +305,15 @@
             </section>
 
             <!-- PROJECTS SECTION -->
-            <section id="projects" class="scroll-mt-section">
+            <section id="projects" class="scroll-mt-section hidden-section">
                 <p class="section-name">FEATURED PROJECTS</p>
                 <h2 class="section-heading mt-6">Things I've built</h2>
                 <div class="grid auto-rows-fr grid-cols-1 lg:grid-cols-3 gap-6 mt-16">
                     <!-- Card 1 -->
-                    <div class="project-card">
+                    <div class="project-card group">
                         <img
                             src="src/img/quakesurvive.png"
-                            class="w-full h-55 object-cover"
+                            class="w-full h-55 object-cover transition-transform duration-500 group-hover:scale-105"
                         >
 
                         <div class="flex flex-1 flex-col gap-4 px-7">
@@ -341,10 +340,11 @@
                         </div>
                     </div>
 
-                    <div class="project-card">
+                    <!-- Card 2 -->
+                    <div class="project-card group">
                         <img
                             src="src/img/lapangin.png"
-                            class="w-full h-55 object-cover"
+                            class="w-full h-55 object-cover transition-transform duration-500 group-hover:scale-105"
                         >
 
                         <div class="flex flex-1 flex-col gap-4 px-7">
@@ -379,10 +379,11 @@
                         </div>
                     </div>
 
-                    <div class="project-card">
+                    <!-- Card 3 -->
+                    <div class="project-card group">
                         <img
                             src="src/img/knights_run.png"
-                            class="w-full h-55 object-cover"
+                            class="w-full h-55 object-cover transition-transform duration-500 group-hover:scale-105"
                         >
 
                         <div class="flex flex-1 flex-col gap-4 px-7">
@@ -423,7 +424,7 @@
             </section>
 
             <!-- SKILLS SECTION -->
-            <section id="skills" class="scroll-mt-section">
+            <section id="skills" class="scroll-mt-section hidden-section">
                 <p class="section-name">SKILLS</p>
 
                 <h2 class="section-heading mt-6">Tools I work with</h2>
@@ -488,7 +489,7 @@
             </section>
 
             <!-- CONTACT SECTION -->
-            <section id="contact" class="flex flex-col items-center gap-6 max-w-[600px] mx-auto scroll-mt-section">
+            <section id="contact" class="flex flex-col items-center gap-6 max-w-[600px] mx-auto scroll-mt-section hidden-section">
                 <p class="section-name">GET IN TOUCH</p>
                 <h2 class="section-heading text-center">Let's work together</h2>
 
