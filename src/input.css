@@ -95,4 +95,9 @@
     .section-heading{
         @apply text-h1 text-text font-sans font-bold leading-2xl;
     }
+
+    .project-card{
+        @apply flex h-full flex-col overflow-hidden gap-6 bg-bg-secondary border border-border rounded-card pb-4
+            transition-all duration-300 ease-out hover:-translate-y-2 hover:border-[#214e95] hover:shadow-xl
+    }
 }
